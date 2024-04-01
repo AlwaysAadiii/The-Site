@@ -1,0 +1,127 @@
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure the background container is behind other content */
+  background-image: url('https://i.ibb.co/YZ91jyj/wallpaperflare-com-wallpaper.jpg'); /* Your image URL */
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* Add blur effect to the background image */
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.profile {
+  text-align: center;
+  color: #333; /* Darker grey text */
+}
+
+.circle {
+  width: 250px; 
+  height: 250px; 
+  border-radius: 75%; 
+  overflow: hidden;
+  margin-top: 10px; /* Adjusted margin-top to move the profile photo slightly below from the top */
+  border: 5px solid #fffb00; /* Yellow border */
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  color: #000000; /* Darker grey text */
+  text-shadow: 0 0 10px #fffb00, 0 0 20px #fffb00, 0 0 30px #fffb00; /* Glow effect */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #fff;
+  background: #ff5100;
+  padding: 10px 0; /* Adjusted padding */
+  margin-top: 10px; /* Add space between each button */
+  border: 1px solid #fff;
+  border-radius: 50px; /* Rounded corners */
+  font-size: 28px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  width: 700px; /* Fixed width for all buttons */
+  justify-content: center; /* Center text horizontally */
+}
+
+.buttons a i {
+  font-size: 25px;
+  margin-right: 10px; /* Add space between icon and text */
+  margin-left: 10px; /* Add space between icon and button border */
+}
+
+.buttons a:hover {
+  background: linear-gradient(to right, #ffcc00, #ff4500); /* Gradient from yellow to orange */
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.buttons a:hover i {
+  color: #ff4500; /* Change icon color on hover to orange similar to Naruto's jumpsuit */
+}
+
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 85%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  color: #000000;
+  background-color: rgb(238, 255, 0); /* Semi-transparent black background */
+  padding: 5px 10px; /* Add padding to the text */
+  border-radius: 500px; /* Add rounded corners */
+  font-weight: bold; /* Increase font weight for emphasis */
+}
+
+@media (max-width: 767px) {
+  .circle {
+    width: 150px; /* Decrease profile picture size for smaller screens */
+    height: 150px;
+  }
+
+  .buttons a {
+    padding: 10px 50px; /* Decrease button padding for smaller screens */
+  }
+
+  footer {
+    left: 50%; /* Center footer on smaller screens */
+    transform: translateX(-50%);
+  }
+}
+
+.image-link {
+  pointer-events: none; /* Disable pointer events on the image link */
+}
