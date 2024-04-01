@@ -113,7 +113,8 @@ footer {
   }
 
   .buttons a {
-    padding: 10px 50px; /* Decrease button padding for smaller screens */
+    width: 80%; /* Adjust button width to fit properly on smaller screens */
+    padding: 10px 0; /* Adjust button padding for smaller screens */
   }
 
   footer {
@@ -121,6 +122,7 @@ footer {
     transform: translateX(-50%);
   }
 }
+
 
 .image-link {
   pointer-events: none; /* Disable pointer events on the image link */
